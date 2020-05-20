@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lange="EN">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Magdalena Duma">
+
+  <title>Grzegorz Duma mgr inż. mosty/kubatura/termowizja</title>
+  <link href="style.css" rel="stylesheet" type="text/css">  
+   
+  <!-- Custom CSS -->
+  
+ 
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">               <!-- must -->     
+        
+  <!-- Fonts AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#mojNavbarResponsive" data-offset="0">               <!-- SCROLLSPY -->
+<!-- ==================================== 
+          1. HEADER 
+==================================== -->
+<section class="home" id="home">
+
+<!-- === navigation === -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="mojNavbarResponsive">
+  <a class="navbar-brand" href="index.html">mgr inż. Grzegorz Duma</a>
+      
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mojNavbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+  </button>                                                             <!-- PRZYCISK Z 3PASKAMI -->
+      
+<div class="collapse navbar-collapse">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">HOME</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#services">USŁUGI</a>
+    </li>
+
+    <li class="nav-item">
+     <a class="nav-link" href="#feature-area">TERMOWIZJA</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#galery">GALERIA</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">KONTAKT</a>
+    </li>
+  </ul>
+</div> <!--/ .collapse .navbar-collapse-->
+</nav>
+
+
+<!-- ==================================== 
+          2. IMG SLIDER  
+  ==================================== -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" dala-interval="500">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+<div class="carousel-inner" role="listbox">
+  <!--Slide 1-->
+    <div class="carousel-item active" style="background-image: url(assets/image/dark.jpg);">
+      <div class="carousel-caption text-center">
+        <h2 class="font-weight-bold"><p>Nadzory, przeglądy i kierowanie robotami</p>
+          <hr style="background-color: white; width: 30%;">
+        <p><span>KONSTRUKCYJNYMI</span> & <span>MOSTOWYMI</span>,</p>
+        <p>BADANIA TERMOWIZYJNE</p></h2>
+        <h5>Fachowe doradztwo techniczno - budowlane</h5>
+        <a href="https://www.facebook.com/matachate/" target="_blank"><i class="fa fa-facebook-official"></i></a> 
+        <br><br>
+
+        <a href="#serRK" class="btn btn-outline-warning py-3 ">Budownictwo Kubaturowe</a>
+        <a href="#serRM" class="btn btn-outline-warning py-3 ">Budownictwo Mostowe</a>
+        <a href="#serTerm" class="btn btn-outline-warning py-3">Termowizja</a>  
+
+      </div> <!--/ .carousel-caption .text-center-->
+    </div> <!--/ .carousel-item .active-->
+
+  <!--Slide 2-->
+    <div class="carousel-item" style="background: linear-gradient(to bottom, transparent, rgb(3, 3, 3, 0.7)), url(assets/image/SliderImg2.jpg);"> <!--cień na zdjęciach-->
+      <div class="carousel-caption text-center">
+              <div class="text">KUBATURA</div>
+      </div> <!--/ .carousel-caption .text-center-->
+    </div> <!--/ .carousel-item-->
+
+  <!--Slide 3-->
+    <div class="carousel-item" style="background: linear-gradient(to top, transparent, rgb(3, 3, 3, 0.8)), url(assets/image/SliderImg3.jpg); "> <!--cień na zdjęciach-->
+      <div class="carousel-caption text-center">
+          <div class="image-container">
+              <div class="text">OBIEKTY INŻYNIERYJSKIE</div>
+            </div>
+      </div> <!--/ .carousel-caption .text-center-->
+    </div> <!--/ .carousel-item-->
+
+</div> <!--/ .carousel-inner-->
+
+<!-- === PREV & NEXT BUTTONS + dodanie ikon === -->
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+      </div> <!--/ #carouselExampleIndicators-->
+</section> <!--/ .home-->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+<!-- ==================================== 
+          3. INTRO USŁUGI  
+  ==================================== -->
+<section class="intro" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>ZAKRES USŁUG</h2>
+                <div class="sub-heading">
+                    <p style="color:black"> 
+                        Poniżej przedstawiłem wszelkie uprawnienia wynikające<br>
+                        z Decyzji o Wykonywaniu Samodzielnych Funkcji Technicznych w Budownictwie.<br>
+                        Proszę o zapoznanie się z ofertą:  
+                    </p>
+                </div> <!--/ .sub-heading-->
+            </div> <!--/ .col-sm-12-->
+        </div> <!--/ .row -- horisontal line-->
+
+        <div class="row service">
+          <div class="col-sm-4" id="serRK" style="margin-top:50px">
+            <div class="intro-block h-100" >
+                <span class="intro-icon"><i class="fa fa-home"></i></span>
+                <h3>Roboty Konstrukcyjne</h3>
+                <p class="block">
+                    <ul class="service">
+                        <li>Kierowanie budową lub robotami w odniesieniu do konstrukcji i architektury obiektu,</li>
+                        <li>Kierowanie wytwarzaniem konstrukcyjnych elementów budowlanych oraz nadzorowanie i kontrola techniczna wytwarzania tych elementów,</li>
+                        <li>Nazdzór inwestorski,</li>
+                        <li>Kontrola techniczna utrzymania obiektów budowlanych.</li>
+                    </ul>
+                </p>
+            </div> <!--/ .intro-block-->
+          </div> <!--/ .col-sm-4-->
+
+            <div class="col-sm-4" id="serRM" style="margin-top:50px">
+             <div class="intro-block h-100" >
+                <span class="intro-icon"><i class="fa fa-building"></i></span>
+                <h3>Roboty Mostowe</h3>
+                <p class="block">
+                    <ul class="service">
+                        <li>Kierowanie budową lub innymi robotami budowlanymi:
+                            <ul>
+                                <li>drogowymi (w rozumieniu przepisów o drogach publicznych),</li>
+                                <li>kolejowymi: mosty, wiadukty, przepusty, konstrukcji oporowej oraz nadziemych i podziemnych przejść dla pieszych (w rozumieniu przepisów o budowlach kolejowych),</li>
+                            </ul>
+                        </li>
+                        <li>Kierowania wytwarzaniem konstrukcyjnych elementów budowlanych oraz nadzorowania i kontroli technicznej wytwarzania tych elementów,</li>
+                        <li>Nadzór inwestorski,</li>
+                        <li>Sprawowania kontroli technicznej utrzymywania jw. obiektów budowlanych.</li>
+                    </ul>
+                </p>
+             </div> <!--/ .intro-block-->
+            </div> <!--/ .col-sm-4-->
+
+            <div class="col-sm-4" id="serTerm" style="margin-top:50px">
+             <div class="intro-block h-100">
+                <span class="intro-icon"><i class="fa fa-camera"></i></span>
+                <h3>Badania Termowizyjne</h3>
+                <p class="block">
+                    <ul class="service">
+                        <li>Inspekcja nieruchomości przed zakupem,</li>
+                        <li>Ocena izolacyjności termicznej budynku,</li>
+                        <li>Wykrycie mostków termicznych,</li>
+                        <li>Sprawdzenie jakości i montażu stolarki okiennej i drzwiowej,</li>
+                        <li>Wykrywanie zawilgoceń tynków,</li>
+                        <li>Lokalizacja przebiegu instalacji c-o oraz wod-kan,</li>
+                        <li>Sprawdzenie szczelności dachu,</li>
+                        <li>Lokalizacja awarii instalacji c-o, wod-kan,</li>
+                        <li>Diagnostyka przeciążeń w instalacjach elektrycznych,</li>
+                        <li>Lokalizacja przebiegu i wykrywanie usterek ogrzewania podłogowego,</li>
+                        <li>Lokalizacja wadliwie pracujących i przegrzewających się łożysk oraz panewek urządzeń mechanicznych,</li>
+                        <li>Ocena stanu technicznego urządzeń mechanicznych.</li>
+                    </ul>
+                </p>
+  
+            </div> <!--/ .intro-block-->
+            </div> <!--/ .col-sm-4-->
+        </div> <!--/ .row-->
+    </div> <!--/ .container-->
+
+</section>
+
+
+<!-- ==================================== 
+          4. TERMOWIZJA jumbo 
+  ==================================== -->
+<!-- wstęp -->
+<section class="feature-area" id="feature-area">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6 text-center">
+              <div id="news">
+                <div class="title">
+                  <span class="intro-icon"><i class="fa fa-camera"></i></span>
+                  <h2>TERMOWIZJA</h2>
+                </div> <!--/ .title-->
+
+                <div class="sub-heading">
+                  <p>Szybko rosnące ceny energii cieplnej tworzą nowe podejście do ekonomicznego wykorzystania energii przy ogrzewaniu budynków. Jednym z najważniejszych kryteriów wartości budynku stały się właściwości termiczne. Podczas eksploatacji budynków, często pojawiają się wątpliwości.
+                  <br>Czy ilość ciepła, za które musimy zapłacić jest rozsądna?</p>
+                  <p>Jak wskazują badania:</p>
+                  <ul>
+                    <li>25-35% ciepła jest tracone przez ściany zewnętrzne,</li>
+                    <li>15-25% przez okna,</li>
+                    <li>20-25%  przez dach,</li>
+                    <li>10-25% przez wentylację,</li>
+                    <li>5-10% miejsca styku z gruntem.</li>
+                  </ul>
+                  <br>
+                </div> <!--/ .sub-heading-->
+              </div> <!--/ #news-->
+            </div> <!--/ .col-sm-6 .text-center-->
+
+            <div class="col-sm-6 termowizjaImg">
+              <div class="row">
+                <div class="col-sm-12">
+                  <img src="assets/image/termowizja1 (1).jpg" style="width:70%" class="img-fluid d-block mx-auto"></a> <br><br>
+                  <img src="assets/image/termowizja3.jpg" style="width:70%" class="img-fluid d-block mx-auto"></a>
+                </div>
+              </div>
+            </div> <!--/ .row-->
+      </div> <!--/ .row-->
+    </div><!--/ .container-->
+</section>
+
+<!-- ==================================== 
+          5. TERMOWIZJA Galeria
+==================================== -->
+<section class="intro" id="galery">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" style="color:darkgray">
+        <p>Utrata ciepła znacznie zwiększa zapotrzebowanie na energie cieplną, 
+        zatem motywuje nas  do poszukiwania skutecznych sposobów mierzenia strat ciepła
+        i sposobów jego zmniejszenia. Jednym z najbardziej dokładnych sposobów
+        mierzenia strat ciepła i sprawdzania jakości remontów lub nowych prac budowlanych 
+        jest termowizyjna diagnostyka.</p>  
+        <br>
+      </div> <!--/ .col-sm-12-->
+             
+    <div class="sub-heading">
+    <div class="row">
+    <div class="col-sm-6">
+      <h2>BADANIE</h2>
+        <p style="color:black" style="float: left;"> 
+          Badanie kamerą termowizyjną jest bezdotykowe, nieinwazyjne i całkowicie 
+          bezpieczne dla badanego obiektu. Wykrywa ono między innymi błędy wykonywanych 
+          izolacji termicznych budynków, potrzeby docieplenia, nieszczelności okien, 
+          zawilgoceń ścian oraz miejsca narażone na zawilgocenia, awarie instalacji c-o, 
+          wod-kan i elektrycznych.</p>  
+        </p>
+    </div> <!--/ .col-sm-6-->
+
+    <div class="col-sm-6" style="float: right;">
+      <h2>SPRZĘT</h2>
+        <p style="color:black"> 
+          Pomiary wykonuję profesjonalną kamerą termowizyjną firmy FLIR o rozdzielczości 
+          detektora 320x240 pikseli, czyli posiadającej 76 800 czujników temperatury, dzięki 
+          czemu można zobaczyć dokładny rozkład temperatury na badanej powierzchni.</p>  
+        </p>
+    </div> <!--/ .col-sm-6-->
+    </div> <!--/ .row-->
+    </div> <!--/ .sub-heading-->
+  </div> <!--/ .row -- horisontal line-->
+</div> <!--/ .container-->
+
+
+<!-- galeria app -->
+<h2 class="gallery-title">GALERIA</h2>
+<div class="container">
+    <div class="row justify-content-center">
+        <div style="text-align:center;">
+            <button class="btn btn-outline-warning filter-button" data-filter="all">WSZYSTKIE*</button>
+            <button class="btn btn-outline-warning filter-button" data-filter="strop">STROP</button>
+            <button class="btn btn-outline-warning filter-button" data-filter="okna">STOLARKA OKIENNA I DRZWIOWA</button>
+            <button class="btn btn-outline-warning filter-button" data-filter="dach">DACH / PODŁOGI</button>
+            <button class="btn btn-outline-warning filter-button" data-filter="inst">INSTALACJE TECH</button>
+            <button class="btn btn-outline-warning filter-button" data-filter="inne">INNE</button>
+        </div>
+    </div> <!--/ .row-->
+
+
+    <div class="row justify-content-center">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter strop">
+            <img src="galeria/1.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter strop">
+            <img src="galeria/1a.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter okna">
+            <img src="galeria/2.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter okna">
+            <img src="galeria/2a.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dach">
+            <img src="galeria/4.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dach">
+            <img src="galeria/4a.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter inst">
+            <img src="galeria/3.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter inst">
+            <img src="galeria/3a.png" class="img-responsive">
+        </div>
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter inne">
+            <img src="galeria/5.png" class="img-responsive">
+        </div>
+    </div> <!--/ .row-->       
+
+</div> <!--/ .container-->
+
+</section>
+
+<!-- ==================================== 
+          6. KONTAKT 
+==================================== -->
+<section class="contact-area testimonials" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>KONTAKT</h2>
+        <div class="sub-heading" >
+          <p style="color: black">
+            Zapraszam do kontaktu telefonicznego lub pocztą mailową.<br>
+            Zachęcam do śledzenia funpaga:<br>
+            <a href="https://www.facebook.com/matachate/" target="_blank"><i class="fa fa-facebook-official"></i></a> 
+          </p>
+        </div> <!--/ .sub-heading-->
+      </div> <!--/ .col-sm-12 .text-center-->
+    </div> <!--/ .row>-->
+
+    <div class="row" style="margin-top: 3rem; margin-bottom: 5rem">
+      <div class="col-sm-4 divider">
+        <h3>kontakt</h3>
+        <div class="contact-adress">
+          <ul>
+              <i class="fa fa-home"></i>
+            <li>
+              <div class="address-phone">
+                <h4>lokalizacja</h4>
+                <span>łódzkie</span>
+              </div>
+            </li>
+
+            <i class="fa fa-phone"></i>
+            <li>
+                <div class="address-phone">
+                  <h4>telefon</h4>
+                  <span>663 505 630</span>
+                </div>
+              </li>
+
+            <i class="fa fa-paper-plane"></i>
+            <li>
+                <div class="address-phone">
+                  <h4>email</h4>
+                  <span>grzegorz.duma@gmail.com</span>
+                </div>
+              </li>
+          </ul>
+        </div> <!--/ .contact-adress-->
+      </div> <!--/ .col-sm-3 divider-->
+
+      <div class="col-sm-8">
+        <div class="contact-block">
+          <h3>Zostaw wiadomość:</h3>
+          <form class="contact_form" >
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Przedstaw się..." required="required">
+                </div> <!--/ .form-group-->
+
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="kontakt@email..." required="required">
+                </div> <!--/ .form-group-->
+
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Twój numer telefonu..." required="required">
+                </div> <!--/ .form-group-->
+
+              </div> <!--/ .col-sm-6-->
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <textarea class="form-control" required="required"></textarea>
+                </div> <!--/ .form-group-->
+
+                <div class="form-group">
+                  <input type="submit" class="btn btn-warning btn-block" value="Wyślij wiadomość*">
+                </div> <!--/ .form-group-->
+
+              </div> <!--/ .col-sm-6-->
+            </div> <!--/ .row-->
+          </form>
+        </div> <!--/ .contact-clock-->
+      </div> <!--/ .col-sm-9-->
+    </div> <!--/ .row-->
+  </div> <!--/ .container-->
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594904.682365164!2d19.73799355110839!3d51.896926109416256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcb24754556af%3A0xcb7cae639b21dbac!2zxYHDs2TFug!5e0!3m2!1spl!2spl!4v1590006679172!5m2!1spl!2spl" 
+  width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+</section>
+
+<!-- ==================================== 
+          7. FOOTER 
+==================================== -->
+<section id="footer">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Create by Magdalena Duma</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+ <script src="assets/js/bootstrap.min.js"></script>
+ <script src="assets/js/mine.js"></script>
+ <script src="assets/js/Elements.js"></script>
+
+ 
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+
+
+
+</body>
+</html>

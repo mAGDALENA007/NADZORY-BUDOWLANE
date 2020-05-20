@@ -1,0 +1,431 @@
+/*===========================
+
+    Grześ full web 
+
+=============================*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+    overflow-x: hidden; /*nic nie wyjedzie poza okienko ekranu wyświetlacza*/
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.offset:before {
+    height: 3.8rem;
+    margin-top: -3.8rem;
+    content: "";
+    display: block;
+}
+/*=========== 1. HEADER ===========*/
+
+/* === navigation ===*/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;               /* 1rem = 16px*/
+    letter-spacing: .1rem;
+    background-color: rgba(0, 0, 0, 0.6)!important;            /*przezoczysty pasek nawigacji*/
+    box-shadow: 0px 0px 17px 0px;
+}
+.collapse.navbar-collapse {      /*stylizacja listy - kolor tekstu*/
+    color: white !important;
+    padding-top: .8rem; 
+} 
+
+.collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding-right: 30px;    
+    font-weight: bold;
+    
+    transition:  all 0.5s ease;
+    text-align: center; 
+}
+.collapse.navbar-collapse .navbar-nav .nav-item .nav-link:active,
+.collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/*=========== 2. IMG SLIDER ===========*/
+.carousel-inner {
+    z-index: 0;
+}
+.carousel-item {
+    height: 100vh; /*vertical height - wysokość pionowa 100=100% */
+}
+.carousel-caption {
+    position: absolute;
+    top: 25%;
+    text-transform: uppercase;
+    
+    width: 100%;
+    right: 0;
+    left: 0!important;
+}
+.carousel-caption h2 {
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+.carousel-caption h5 {
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+.carousel-caption a i.fa.fa-facebook-official {
+    color: white;
+    font-size: 3rem; 
+    margin:0.1rem;
+    transition:  all 0.5s ease-in;
+    z-index: 100 !important;
+}
+.carousel-caption a i.fa.fa-facebook-official:hover {
+    color: #ffc107;
+}
+a.btn.btn-outline-warning.py-3 {
+    transition:  all 0.5s ease-in;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    font-size: 5vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+  }
+
+/*up to go*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    background-color: white;
+    color: #ffc107;
+    border: solid 1px #ffc107;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  #myBtn:hover {
+    background-color: #ffc107;
+    text-shadow: 0 -1px 0 rgba(255, 244, 117, 0.8);
+    color: white;
+  }
+/*=========== 3. INTRO USŁUGI  ===========*/
+.intro {
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+/* === 3 horisontal line ===*/
+.sub-heading {
+    position: relative;
+}
+.sub-heading:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: #ffc107;
+    z-index: 1;
+
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.sub-heading:hover:before { /*tyle zamieszania*/
+    width: 280px;
+    margin-left: -140px;
+}
+.sub-heading:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background: lightgray;
+}
+.sub-heading p{ 
+    color: grey;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+/* === 3 bloki z fontawesome ===*/
+.intro-block {
+    position: relative;
+    background-color: #f7f7f7;
+    margin: 20% 0px 0px 0px; /*1 zmienia odległość bloków do linii horizontal*/
+    text-align: center; /*p zmień na left*/
+    padding: 85px 30px 0px 25px;
+}
+.intro-block:hover, .intro-block:active {
+    background-color: #ffc107;
+    color: white;
+}
+.intro-block:hover {
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.intro-block .intro-icon {
+    position: absolute;
+    top: -31px;
+    left: 45%;
+    margin-left: -31px;
+}
+
+.intro-block .fa {
+    width: 63px;
+    height: 63px;
+    font-size: 35px;
+    color: white;
+    line-height: 2;
+    background: #ffc107;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px rgb(255, 244, 117) !important;
+}
+.intro-block:hover .fa, 
+.intro-block:active .fa {
+    line-height: 2;
+    color: #ffc107;
+    background-color: white;
+    box-shadow: 0px 0px 0px 10px #ffc107;
+}
+
+.intro-block h3 {
+    color: #ffc107;
+    text-transform: uppercase;
+}
+.intro-block:hover h3, 
+.intro-block:active h3 {
+    color: white;
+}
+/* === 3 bloki text ===*/
+.service {
+    text-align: left;
+}
+
+/*=========== 4. TERMOWIZJA jumbo  ===========*/
+
+.row .col-sm-12.col-lg-8.text-center {
+    left: 200px;
+}
+.feature-area {
+    background-image: /*linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1)),*/ url(concrete-texture.png);
+    background-position: center;
+    background-attachment: fixed;
+    color: white !important;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+.intro-icon .fa {
+    margin: 20px;
+    width: 63px;
+    height: 63px;
+    font-size: 35px;
+    color: white;
+    line-height: 2;
+    background: #ffc107;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px rgb(255, 244, 117);
+}
+.intro-icon:hover .fa, .intro-icon:active .fa {
+    color: #ffc107;
+    background-color: white;
+    box-shadow: 0px 0px 0px 10px #ffc107;
+}
+.intro-icon:hover .fa, .intro-icon:active .fa {
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+#news {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 1.875rem;
+}
+.sub-heading p,
+.sub-heading p ul  {
+    color: white;
+}
+
+
+/*=========== 5. TERMOWIZJA Galeria ===========*/
+.intro {
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+.gallery-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.filter-button {
+    margin-bottom: 30px;
+}
+
+.gallery_product {
+    margin-bottom: 30px;
+}
+
+/*=========== 6. KONTAKT ===========*/
+.contact-area {
+    padding: 0;
+}
+.contact-area .divider {
+    border-right: 1px solid lightgray;
+}
+.contact-area ul li {
+    list-style-type: none;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.contact-area ul li:last-child { /*sudoclass*/
+    margin-bottom: 0;
+}
+.contact-area h3 {
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.contact-area h4 {
+    color: #3a3a3a;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    letter-spacing: 0.025em;
+}
+.contact-area span {
+    display: block;
+    color: #3a3a3a;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.025em;
+}
+
+.sub-heading a i.fa.fa-facebook-official {
+    color: #ffc107;
+    font-size: 3rem; 
+    margin:0.1rem;
+    transition:  all 0.5s ease;
+}
+.sub-heading a i.fa.fa-facebook-official:hover {
+    color:  #3b5998;
+}
+
+
+.contact-adress ul .fa {
+    float: left;
+    width: 25px;
+    color: #ffc107;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.contact-adress ul li .address-phone {
+    float: left;
+    width: 180px;
+    padding-left: 25px;
+}
+
+/*formularz po prawej*/
+.contact-block {
+    padding-left: 25px;
+}
+.contact-area .form-control, 
+.contact-area textarea {
+    background-color: rgba(211, 211, 211, 0.062);
+    border: 1px solid #ffc107;
+    padding: 10px 12px;
+    height: 45px;
+    border-radius: 0;
+}
+.contact-area .form-control:hover, 
+.contact-area textarea:hover
+{
+    border: 3px solid #ffc107;
+}
+.contact-area .form-group {
+    margin-bottom: 28px;
+}
+.contact-area textarea {
+    min-height: 125px;
+}
+
+
+/*=========== 7. FOOTER  ===========*/
+#footer .row .col-sm-12 p {
+    text-align: center; 
+    background-color: black; 
+    color: white;
+    padding: 20px 20px;
+    margin: 0 !important;
+} 
+
+
+
+/*===========================
+    Grześ media
+=============================*/
+
+@media (max-width: 992px) {
+    /*home*/
+    .carousel-caption {
+        top: 15%;
+    }
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
+        padding-bottom: 0.5rem;
+    }
+    .carousel-caption h5 {
+        font-size: 0.8rem;
+        letter-spacing: .1rem;
+        padding-bottom: 0.5rem;
+    }
+    .intro-block h3 {
+        font-size: 100%;
+    }
+    /*service*/
+    h3 {
+        font-size: 2px;
+    }
+    /*termowizja*/
+    .termowizjaImg img {
+        margin-top: 60px;
+        margin-bottom: -20px;
+    }
+
+    /*kontakt*/
+
+    
+}
+
+
